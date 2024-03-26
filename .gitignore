@@ -1,0 +1,64 @@
+# ignore Node
+node_modules/
+dist/
+lib/
+mvn/docker/src/main/jib/usr/local/apache2/htdocs/*
+*lint-output
+
+# ignore local environment settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore generated files
+pom.xml
+/mvn/docker/\!pom!.xml
+
+# ignore Maven with Sonar
+target/
+.sonar
+
+# ignore output
+mocha.json
+coverage/*
+test-reports/*
+doc/*
+.nyc_output/*
+*.dar
+
+# ignore Cypress bundled files
+/cypress/downloads
+/cypress/screenshots
+/cypress/examples
+/cypress/videos
+
+# ignore IntelliJ
+.idea
+*.sublime*
+*.log
+*.iml
+.run
+
+# ignore Eclipse
+.project
+.classpath
+.settings
+.springBeans
+
+# ignore Vim
+*.swp
+*.vscode
+
+# ignore OSX
+.DS_Store
+
+# ignore custom Windows batch files
+*.cmd
+
+# webpack bundle stats
+stats.json
+.snyk
+
+# ignore drafts (which are written from dev-server)
+./test-portal/drafts/*
